@@ -162,18 +162,30 @@
                 </div>
             </div>
             <div class="col-md-6 col-12">
-                <div class="car2con">
-                    <p class="cdn1Para text-start">The Mahindra XUV700 has 1 Diesel Engine and 1 Petrol Engine on offer.
-                        The
-                        Diesel engine is 2198 cc while the Petrol engine is 1999 cc . It is available with Automatic &
-                        Manual transmission. Depending upon the variant and fuel type the XUV700 has a mileage of . The
-                        XUV700 is a 7 seater 4 cylinder car and has length of 4695, width of 1890 and a wheelbase of
-                        2750.
+                <div class="car2con d-flex flex-column align-items-center justify-content-center" style="width: 100%; text-align: center;">
+                    <p class="cdn1Para text-start" style="max-width: 100%; padding: 0 10px;">
+                        The Mahindra XUV700 has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 2198 cc while the Petrol engine is 1999 cc. It is available with Automatic & Manual transmission. Depending upon the variant and fuel type, the XUV700 has a mileage of. The XUV700 is a 7-seater 4-cylinder car and has a length of 4695, width of 1890, and a wheelbase of 2750.
                     </p>
                     <button type="button" class="btn custombtn">
                         Check Current Offers
                     </button>
                 </div>
+                
+                <!-- Responsive adjustment for 375px screen size -->
+                <style>
+                    @media (max-width: 375px) {
+                        .car2con {
+                            width: 100%;
+                            padding: 20px;
+                            text-align: center;
+                        }
+                        .cdn1Para {
+                            max-width: 100%;
+                            text-align: center;
+                        }
+                    }
+                </style>
+                
             </div>
 
 
@@ -212,7 +224,7 @@
 
             </div>
 
-            <table class="table table-hover table-dark customWidth2">
+            <table class="table table-hover table-dark customWidth2" style="width: 100%; max-width: 100%; overflow-x: auto;">
                 <thead>
                     <tr class="customTableHeader">
                         <th scope="col">
@@ -222,7 +234,6 @@
                             <p class="themColor m-0">Price</p>
                         </th>
                         <th scope="col">
-
                         </th>
                     </tr>
                 </thead>
@@ -241,7 +252,6 @@
                                 <span class="tablespan">
                                     Get On Road Price*
                                 </span>
-
                             </h5>
                         </td>
                         <td>
@@ -264,12 +274,13 @@
                                 <span class="tablespan">
                                     Get On Road Price*
                                 </span>
-
                             </h5>
                         </td>
-                        <td> <button type="button" class="btn btn-outline-warning custombtnR">
+                        <td>
+                            <button type="button" class="btn btn-outline-warning custombtnR">
                                 View Offers
-                            </button></td>
+                            </button>
+                        </td>
                     </tr>
                     <tr>
                         <td>
@@ -285,15 +296,26 @@
                                 <span class="tablespan">
                                     Get On Road Price*
                                 </span>
-
                             </h5>
                         </td>
-                        <td> <button type="button" class="btn btn-outline-warning custombtnR">
+                        <td>
+                            <button type="button" class="btn btn-outline-warning custombtnR">
                                 View Offers
-                            </button></td>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+            
+            <!-- Responsive adjustment for 375px screen size -->
+            <style>
+                @media (max-width: 375px) {
+                    .customWidth2 {
+                        width: 100% !important;
+                    }
+                }
+            </style>
+            
         </div>
 
         <div class="col-md-9 col-12 d-flex justify-content-end align-items-center flex-column mt-3">
@@ -311,7 +333,7 @@
 
             </div>
 
-            <table class="table table-hover table-dark customWidth2">
+            <table class="table table-hover table-dark customWidth2" style="width: 100%; max-width: 100%; overflow-x: auto;">
                 <thead>
                     <tr class="customTableHeader">
                         <th scope="col">
@@ -397,6 +419,20 @@
                     </tr>
                 </tbody>
             </table>
+            
+            <!-- Responsive adjustment for 375px screen size -->
+            <style>
+                @media (max-width: 375px) {
+                    .customWidth2 {
+                        width: 100% !important;
+                        table-layout: fixed;
+                    }
+                    .table {
+                        width: 100% !important;
+                    }
+                }
+            </style>
+            
         </div>
 
 
@@ -459,21 +495,34 @@
                 <img class="car3" src="./assets/images/prons.svg" alt="">
             </div>
 
-            <div class="col-md-6 col-12   d-flex  align-items-center">
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-center" style="text-align: center; padding: 0 10px;">
                 <div class="customWidth3">
-
-
                     <h2 class="pron m-0">Pros <span class="prons">and</span> Cons</h2>
-                    <h3 class="part2H ">Take on Mahindra XUV700</h3>
+                    <h3 class="part2H">Take on Mahindra XUV700</h3>
                     <p class="cdn1Para text-start">
-                        If you are in the market looking for any kind of SUV for your family, the XUV700 first gets all
-                        the
-                        basics right and then impress you with its segment-first features.
+                        If you are in the market looking for any kind of SUV for your family, the XUV700 first gets all the basics right and then impresses you with its segment-first features.
                     </p>
-
                 </div>
             </div>
-
+            
+            <!-- Responsive adjustment for 375px screen size -->
+            <style>
+                @media (max-width: 375px) {
+                    .col-12 {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                    .customWidth3 {
+                        max-width: 100%;
+                        padding: 0 10px; /* Adds some padding for smaller screens */
+                    }
+                    .cdn1Para {
+                        text-align: center;
+                    }
+                }
+            </style>
+            
             <hr class="customWidth3 m-auto">
 
             <div class="col-md-6 col-12 p-4">
@@ -691,57 +740,106 @@
         </div>
         
         <div id="relatedVideosCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-            <div style="margin-bottom: 10px;" class="carousel-inner">
+            <div class="carousel-inner">
+                <!-- First Item -->
                 <div class="carousel-item active">
-                    <div class="d-flex justify-content-center position-relative">
-                          <div style="border: 5px solid white;">
-
-                             <img class="d-block img-fluid" src="./assets/images/video1.jpeg" alt="Video 3"
-                             style="width: 500px; height: auto; border-radius: 8px;">
+                    <div class="row g-3"> <!-- Add g-3 for gutter space between items -->
+                        <!-- 3 Cards in one row at 375px -->
+                        <div class="col-4 col-sm-4">
+                            <div class="d-flex justify-content-center position-relative">
+                                <div style="border: 5px solid white;">
+                                    <img class="d-block img-fluid" src="./assets/images/video1.jpeg" alt="Video 3"
+                                         style="width: 100%; height: auto; border-radius: 8px;">
+                                </div>
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="d-flex justify-content-center align-items-center"
+                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                    </div>
+                                </div>
                             </div>
-                    
-                        <div class="position-absolute top-50 start-50 translate-middle">
-                            <div class="d-flex justify-content-center align-items-center" 
-                                style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                        </div>
+                        <div class="col-4 col-sm-4">
+                            <div class="d-flex justify-content-center position-relative">
+                                <div style="border: 5px solid white;">
+                                    <img class="d-block img-fluid" src="./assets/images/video2.jpeg" alt="Video 3"
+                                         style="width: 100%; height: auto; border-radius: 8px;">
+                                </div>
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="d-flex justify-content-center align-items-center"
+                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4">
+                            <div class="d-flex justify-content-center position-relative">
+                                <div style="border: 5px solid white;">
+                                    <img class="d-block img-fluid" src="./assets/images/video3.jpeg" alt="Video 3"
+                                         style="width: 100%; height: auto; border-radius: 8px;">
+                                </div>
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="d-flex justify-content-center align-items-center"
+                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+        
+                <!-- Second Item -->
                 <div class="carousel-item">
-                    <div class="d-flex justify-content-center position-relative">
-                         <div style="border: 5px solid white;">
-
-                             <img class="d-block img-fluid" src="./assets/images/video2.jpeg" alt="Video 3"
-                             style="width: 500px; height: auto; border-radius: 8px;">
+                    <div class="row g-3">
+                        <div class="col-4 col-sm-4">
+                            <div class="d-flex justify-content-center position-relative">
+                                <div style="border: 5px solid white;">
+                                    <img class="d-block img-fluid" src="./assets/images/video1.jpeg" alt="Video 3"
+                                         style="width: 100%; height: auto; border-radius: 8px;">
+                                </div>
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="d-flex justify-content-center align-items-center"
+                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                    </div>
+                                </div>
                             </div>
-                    
-                        <div class="position-absolute top-50 start-50 translate-middle">
-                            <div class="d-flex justify-content-center align-items-center" 
-                                style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                        </div>
+                        <div class="col-4 col-sm-4">
+                            <div class="d-flex justify-content-center position-relative">
+                                <div style="border: 5px solid white;">
+                                    <img class="d-block img-fluid" src="./assets/images/video2.jpeg" alt="Video 3"
+                                         style="width: 100%; height: auto; border-radius: 8px;">
+                                </div>
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="d-flex justify-content-center align-items-center"
+                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4">
+                            <div class="d-flex justify-content-center position-relative">
+                                <div style="border: 5px solid white;">
+                                    <img class="d-block img-fluid" src="./assets/images/video3.jpeg" alt="Video 3"
+                                         style="width: 100%; height: auto; border-radius: 8px;">
+                                </div>
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="d-flex justify-content-center align-items-center"
+                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center position-relative">
-                        <div style="border: 5px solid white;">
-                             <img class="d-block img-fluid" src="./assets/images/video3.jpeg" alt="Video 3"
-                             style="width: 500px; height: auto; border-radius: 8px;">
-                             
-                            </div>
-                        <div class="position-absolute top-50 start-50 translate-middle">
-                            <div class="d-flex justify-content-center align-items-center" 
-                                style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
                 </div>
             </div>
+        
+            <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#relatedVideosCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -751,6 +849,11 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        
+        
+        
+        
+        
         
 
 
