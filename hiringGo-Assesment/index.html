@@ -18,7 +18,7 @@
 
 
             <div class=" w-100">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <nav class="navbar navbar-expand-lg justify-content-start bg-body-tertiary" data-bs-theme="dark">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +49,13 @@
                             </style>
                             
                             <div class="d-flex flex-wrap gap-4 justify-content-between align-items-center w-100 mt-2 flex-column flex-md-row">
-                                <p class="newClass selectedTablemenu">Overview</p>
-                                <p class="newClass tablemenu">Compare</p>
-                                <p class="newClass tablemenu">Images</p>
-                                <p class="newClass tablemenu">User Reviews</p>
-                                <p class="newClass tablemenu">Varients</p>
-                                <p class="newClass tablemenu">Videos</p>
-                                <p class="newClass tablemenu">More</p>
+                                <p style="margin-left: -40px;" class="newClass selectedTablemenu">Overview</p>
+                                <p style="margin-left: -43px;" class="newClass tablemenu">Compare</p>
+                                <p style="margin-left:-51px ;" class="newClass tablemenu">Images</p>
+                                <p style="margin-left: -8px;" class="newClass tablemenu">User Reviews</p>
+                                <p style="margin-left:-47px ;" class="newClass tablemenu">Varients</p>
+                                <p style="margin-left: -54px;" class="newClass tablemenu">Videos</p>
+                                <p style="margin-left: -59px;" class="newClass tablemenu">More</p>
                             </div>
                         </div>
                     </div>
@@ -515,8 +515,19 @@
                 <img class="car3" src="./assets/images/car4.svg" alt="">
             </div>
         </div>
+        <style>
+               @media (max-width: 475px) {
+                    .newExterior {
+                       margin-left: 8px !important;
+                    }
+                    
+                   .exterClass {
+                        width: 128%;
+                    }
+                }
+        </style>
 
-        <div class="customWidth1 m-auto">
+        <div  class="newExterior customWidth1 m-auto">
 
             <div class="my-2 d-flex justify-content-between g-2">
                 <div class="mx-2 border-end p-2 w-100 selectedColofr"> Exterior </div>
@@ -525,9 +536,9 @@
                 <div class="mx-2  p-2 w-100">Verdict</div>
             </div>
 
-            <hr>
+           <hr style="width: 100%;margin-left: 27px;">
 
-            <p>
+            <p class="exterClass">
                 While the platform is all-new, Mahindra has decided to retain the essence of the XUV500 in the 700’s
                 design.
                 Paying homage to the 500 are the new headlamps where the “C” shape is maintained by the LED DRLs.
@@ -818,116 +829,77 @@
             </div>
         </div>
         
-        <div id="relatedVideosCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- First Item -->
-                <div class="carousel-item active">
-                    <div class="row g-3"> <!-- Add g-3 for gutter space between items -->
-                        <!-- 3 Cards in one row at 375px -->
-                        <div class="col-4 col-sm-4">
-                            <div class="d-flex justify-content-center position-relative">
-                                <div style="border: 5px solid white;">
-                                    <img class="d-block img-fluid" src="./assets/images/video1.jpeg" alt="Video 3"
-                                         style="width: 100%; height: auto; border-radius: 8px;">
-                                </div>
-                                <div class="position-absolute top-50 start-50 translate-middle">
-                                    <div class="d-flex justify-content-center align-items-center"
-                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+            <div id="relatedVideosCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-4">
+                                <div class="d-flex justify-content-center position-relative">
+                                    <div style="border: 5px solid white;">
+                                        <img class="d-block img-fluid" src="./assets/images/video1.jpeg" alt="Video 1"
+                                            style="width: 100%; height: auto; border-radius: 8px;">
+                                    </div>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <div class="d-flex justify-content-center align-items-center"
+                                            style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                            <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-4">
-                            <div class="d-flex justify-content-center position-relative">
-                                <div style="border: 5px solid white;">
-                                    <img class="d-block img-fluid" src="./assets/images/video2.jpeg" alt="Video 3"
-                                         style="width: 100%; height: auto; border-radius: 8px;">
-                                </div>
-                                <div class="position-absolute top-50 start-50 translate-middle">
-                                    <div class="d-flex justify-content-center align-items-center"
-                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-4">
+                                <div class="d-flex justify-content-center position-relative">
+                                    <div style="border: 5px solid white;">
+                                        <img class="d-block img-fluid" src="./assets/images/video2.jpeg" alt="Video 2"
+                                            style="width: 100%; height: auto; border-radius: 8px;">
+                                    </div>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <div class="d-flex justify-content-center align-items-center"
+                                            style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                            <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-4">
-                            <div class="d-flex justify-content-center position-relative">
-                                <div style="border: 5px solid white;">
-                                    <img class="d-block img-fluid" src="./assets/images/video3.jpeg" alt="Video 3"
-                                         style="width: 100%; height: auto; border-radius: 8px;">
-                                </div>
-                                <div class="position-absolute top-50 start-50 translate-middle">
-                                    <div class="d-flex justify-content-center align-items-center"
-                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                    </div>
+                    <!-- Third Slide -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-4">
+                                <div class="d-flex justify-content-center position-relative">
+                                    <div style="border: 5px solid white;">
+                                        <img class="d-block img-fluid" src="./assets/images/video3.jpeg" alt="Video 3"
+                                            style="width: 100%; height: auto; border-radius: 8px;">
+                                    </div>
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <div class="d-flex justify-content-center align-items-center"
+                                            style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
+                                            <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        
-                <!-- Second Item -->
-                <div class="carousel-item">
-                    <div class="row g-3">
-                        <div class="col-4 col-sm-4">
-                            <div class="d-flex justify-content-center position-relative">
-                                <div style="border: 5px solid white;">
-                                    <img class="d-block img-fluid" src="./assets/images/video1.jpeg" alt="Video 3"
-                                         style="width: 100%; height: auto; border-radius: 8px;">
-                                </div>
-                                <div class="position-absolute top-50 start-50 translate-middle">
-                                    <div class="d-flex justify-content-center align-items-center"
-                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4">
-                            <div class="d-flex justify-content-center position-relative">
-                                <div style="border: 5px solid white;">
-                                    <img class="d-block img-fluid" src="./assets/images/video2.jpeg" alt="Video 3"
-                                         style="width: 100%; height: auto; border-radius: 8px;">
-                                </div>
-                                <div class="position-absolute top-50 start-50 translate-middle" style="">
-                                    <div class="d-flex justify-content-center align-items-center"
-                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4">
-                            <div class="d-flex justify-content-center position-relative">
-                                <div style="border: 5px solid white;">
-                                    <img class="d-block img-fluid" src="./assets/images/video3.jpeg" alt="Video 3"
-                                         style="width: 100%; height: auto; border-radius: 8px;">
-                                </div>
-                                <div class="position-absolute top-50 start-50 translate-middle">
-                                    <div class="d-flex justify-content-center align-items-center"
-                                         style="width: 60px; height: 60px; background-color: white; border-radius: 50%;">
-                                        <i class="bi bi-play-fill" style="font-size: 30px; color: yellow;"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#relatedVideosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#relatedVideosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#relatedVideosCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#relatedVideosCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
         
         
         
